@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <title> 
+        JavaScript inheritance of constructor functions 
+    </title>
+</head>
+  
+<body>
+    <script>
+        function Employee(name, age, gender, id) {
+            this.name = name;
+            this.age = age;
+            this.gender = gender;
+            this.id = id;
+        };
+  
+        function Developer(name, age, gender, id, 
+        specialization) {
+  
+            // Calling Employee constructor function
+            Employee.call(this, name, age, gender, id);
+  
+            // Adding a new parameter
+            this.specialization = specialization;
+        }
+        console.log(Employee.prototype);
+        console.log(Developer.prototype);
+    </script>
+</body>
+  
+</html>
