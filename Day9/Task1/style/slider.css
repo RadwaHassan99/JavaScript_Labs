@@ -1,0 +1,108 @@
+html{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(171, 171, 242) , rgb(248, 180, 232));
+}
+
+h2{
+    margin-left: 41%;
+    font-size: xx-large;
+    color: #025766;
+    text-shadow: 0 0 5px #A5F1FF, 0 0 10px #A5F1FF,
+             0 0 20px #A5F1FF, 0 0 30px #A5F1FF,
+             0 0 40px #A5F1FF;
+    font-style: italic;         
+}
+
+.container{
+    position: absolute;
+    margin: 1% 30%;
+    width: 40%;
+    height: 80%;
+    padding: 0%;
+    padding-top: 2%;
+    border: 2px solid;
+    background-color: rgb(1, 28, 147);
+    border-radius: 20%;
+    box-shadow: 10px 10px 5px rgba(35, 35, 35, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1px 1px;
+}
+
+.image-container{
+    position: relative;
+    width: 70%;
+    height: 90%;
+    padding: 0%;
+}
+
+
+img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.dot-container{
+    width: 10%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px 5px;
+}
+
+button{
+    outline: none;
+    cursor: pointer;
+}
+
+.dot{
+    height: 20%;
+    width: 15%;
+    border-radius: 25%;
+    border: 2px solid blueviolet;
+    background-color: transparent;
+}
+
+.active, .dot:hover,#prev:hover,#next:hover {
+    background-color:#076bb8;;
+  }
+
+
+#prev,#next{
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    background-color:rgb(203, 153, 251);
+    color: #ffffff;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border: none;
+    border-radius: 5px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#prev{
+    left: 0px;
+}
+
+#next{
+    right: 0px;
+}
+
